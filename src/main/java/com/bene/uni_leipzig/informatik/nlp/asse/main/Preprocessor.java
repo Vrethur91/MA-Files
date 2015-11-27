@@ -1,14 +1,14 @@
 package com.bene.uni_leipzig.informatik.nlp.asse.main;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.preprocessing.processing.BigramGenerator;
-import com.bene.uni_leipzig.informatik.nlp.asse.preprocessing.processing.XFeatureGenerator;
-import com.bene.uni_leipzig.informatik.nlp.asse.preprocessing.processing.DataProcessor;
-import com.bene.uni_leipzig.informatik.nlp.asse.preprocessing.processing.ClassConverter;
-import com.bene.uni_leipzig.informatik.nlp.asse.general.io.in.ImportInterface;
-import com.bene.uni_leipzig.informatik.nlp.asse.general.io.in.ImportMalletFormat;
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.LetterComponent;
-import com.bene.uni_leipzig.informatik.nlp.asse.general.io.converter.SVMFormatConverter;
-import com.bene.uni_leipzig.informatik.nlp.asse.general.io.out.DataFileWriter;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.processing.BigramGenerator;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.processing.XFeatureGenerator;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.processing.DataProcessor;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.processing.ClassConverter;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.in.ImportRegionInterface;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.in.ImportRegionMalletFormat;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.LetterComponent;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.converter.SVMFormatConverter;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.out.DataFileWriter;
 import java.util.ArrayList;
 import java.util.Properties;
 
@@ -22,7 +22,7 @@ public class Preprocessor {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        preprocess();
+        //preprocess();
         //oneVsAll();
         //testground();
     }
@@ -36,7 +36,7 @@ public class Preprocessor {
     }
 
     public static void preprocess() {
-        ImportInterface dataImport = new ImportMalletFormat();
+        ImportRegionInterface dataImport = new ImportRegionMalletFormat();
         ArrayList<LetterComponent> letterComponents = dataImport.importData("./data/4L.txt");
 
         ClassConverter converter = new ClassConverter();
@@ -67,7 +67,7 @@ public class Preprocessor {
             "1211", "1131", "151", "1122", "1125", "153", "1611", "111", "1212", "1132", "123", "1612", "143",
             "122", "112", "11", "12", "152", "13", "121", "1134"};
         for (String id : ids) {
-            ImportInterface dataImport = new ImportMalletFormat();
+            ImportRegionInterface dataImport = new ImportRegionMalletFormat();
             ArrayList<LetterComponent> letterComponents = dataImport.importData("./data/4L.txt");
 
             ClassConverter converter = new ClassConverter();

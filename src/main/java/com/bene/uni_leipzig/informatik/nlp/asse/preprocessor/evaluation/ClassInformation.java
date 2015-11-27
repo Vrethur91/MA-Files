@@ -1,4 +1,4 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.preprocessing.evaluation;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.evaluation;
 
 import java.util.HashMap;
 import java.util.Map;

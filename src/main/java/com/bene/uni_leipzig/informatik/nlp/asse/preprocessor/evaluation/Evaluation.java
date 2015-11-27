@@ -1,6 +1,6 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.preprocessing.evaluation;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.evaluation;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.LetterComponent;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.LetterComponent;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

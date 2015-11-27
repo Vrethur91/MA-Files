@@ -1,7 +1,7 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.general.io.in;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.in;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.general.io.PropertiesManager;
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.LetterComponent;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.PropertiesManager;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.LetterComponent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
  *
  * @author Bene
  */
-public class ImportHTMLDoc implements ImportInterface {
+public class ImportRegionHTMLDoc implements ImportRegionInterface {
 
     @Override
     public ArrayList<LetterComponent> importData(String path) {
@@ -63,7 +63,7 @@ public class ImportHTMLDoc implements ImportInterface {
                     }
                 }
             } catch (Exception ex) {
-                Logger.getLogger(ImportHTMLDoc.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(ImportRegionHTMLDoc.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
 

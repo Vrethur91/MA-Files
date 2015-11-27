@@ -1,6 +1,6 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.preprocessing.processing;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.processing;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.LetterComponent;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.LetterComponent;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;

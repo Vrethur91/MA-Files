@@ -1,6 +1,6 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.general.io.out;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.out;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.LetterComponent;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.LetterComponent;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;

@@ -1,6 +1,6 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.general.io.in;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.in;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.LetterComponent;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.LetterComponent;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -13,7 +13,7 @@ import com.bene.uni_leipzig.informatik.nlp.asse.main.Preprocessor;
  *
  * @author Bene
  */
-public class ImportMalletFormat implements ImportInterface{
+public class ImportRegionMalletFormat implements ImportRegionInterface{
 
     @Override
     public ArrayList<LetterComponent> importData(String path) {

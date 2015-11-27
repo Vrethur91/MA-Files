@@ -1,7 +1,7 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.general.io.converter;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.converter;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.general.io.PropertiesManager;
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.LetterComponent;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io.PropertiesManager;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.LetterComponent;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;

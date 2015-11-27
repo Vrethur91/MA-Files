@@ -1,4 +1,4 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.general.objects;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects;
 
 /**
  *

@@ -1,6 +1,6 @@
-package com.bene.uni_leipzig.informatik.nlp.asse.general.io;
+package com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.io;
 
-import com.bene.uni_leipzig.informatik.nlp.asse.general.objects.ClassInfo;
+import com.bene.uni_leipzig.informatik.nlp.asse.preprocessor.objects.ClassInfo;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
